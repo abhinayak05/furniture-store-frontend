@@ -15,4 +15,4 @@ Online Shopping Furniture Shop Website Frontend
 ## Screenshots
 
 ### Login
-![Login](https://github.com/abhinayak05/pet-shop-website-frontend/blob/main/screenshots/login.png?raw=true)
+![Login](https://github.com/abhinayak05/furniture-store-frontend/blob/main/screenshots/login.png?raw=true)
