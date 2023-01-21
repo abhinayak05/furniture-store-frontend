@@ -37,7 +37,3 @@ Online Shopping Furniture Shop Website Frontend
 ![My Account](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/myaccount.png?raw=true)
 ### Footer
 ![Footer](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/footer.png?raw=true)
-<<<<<<< HEAD
-=======
-
->>>>>>> 9e1f594ccd490a3a0579518e4c78aac1021febbb
