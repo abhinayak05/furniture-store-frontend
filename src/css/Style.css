@@ -1,0 +1,76 @@
+
+.section{
+    background: linear-gradient(#ffffff, #9198e5);
+        
+}
+.album{
+  margin-bottom: 20rem !important;
+}
+
+.companyName{
+    font-size: 30px;
+    opacity:1;
+    font-family:sans-serif;
+    font-weight:bold;
+    background: linear-gradient(to right, #fff 0%, #adff5c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  animation-name: logoName;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+  
+  @keyframes logoName {
+    0%   { opacity:1;}
+    25%  { opacity:0.8;}
+    50%  { opacity:0.6;}
+    75%  { opacity:0.5;}
+    100% { opacity:0.3;}
+  }
+
+
+  .col-md-4{
+    text-decoration: none;
+    flex-basis: 35%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  }
+  .col-md-4:hover{
+    transform: translateY(-5px);
+  }
+  
+  .col-md-4, h5,p,h6{
+    color: black;
+  }
+ .productQty input{
+  width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #04ffa3;
+ }
+ .orderConfirm{
+  height:auto;
+    width:100%;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    color: white;
+ }
+
+ .homeBtn{
+  background: #ff523b;
+    color: #fff;
+    text-align: center;
+    float: right;
+    padding: 14px 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    border: none;
+ }
