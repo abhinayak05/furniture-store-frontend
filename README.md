@@ -15,7 +15,7 @@ Online Shopping Furniture Shop Website Frontend
 ## Screenshots
 
 ### Login And Register
-![Login](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/loginregister.png?raw=true)
+![Login](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/login.png?raw=true)
 ### Login
 ![Login](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/login.png?raw=true)
 ### Home
