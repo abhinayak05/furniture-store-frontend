@@ -24,8 +24,11 @@ Online Shopping Furniture Shop Website Frontend
 ![Home](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/homepageproducts.png?raw=true)
 ### Product Info
 ![Product Info](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/productInfo.png?raw=true)
+<<<<<<< HEAD
 ### Cart
 ![Cart](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/cart.png?raw=true)
+=======
+>>>>>>> 9e1f594ccd490a3a0579518e4c78aac1021febbb
 ### Checkout
 ![Checkout](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/checkout.png?raw=true)
 ### My Orders
@@ -36,3 +39,7 @@ Online Shopping Furniture Shop Website Frontend
 ![My Account](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/myaccount.png?raw=true)
 ### Footer
 ![Footer](https://github.com/abhinayak05/furnitures_store_frontend/blob/main/screenshots/footer.png?raw=true)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e1f594ccd490a3a0579518e4c78aac1021febbb
