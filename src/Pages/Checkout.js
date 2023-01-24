@@ -46,7 +46,7 @@ function Checkout() {
             if (orderedDetails.phone.match(phoneno)) {
                 if (orderedDetails.pincode.match(pin)) {
                     if (orderedDetails.email.match(mailformat)) {
-                          dispatch(placeOrderProduct(orderedDetails))
+                          dispatch(placeOrderProduct(orderedDetails));debugger
                     } else {
                         alert("You have entered an invalid email address!")
                     }

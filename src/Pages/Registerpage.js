@@ -76,7 +76,7 @@ function Registerpage() {
                                 <input value={dob} onChange={(evt) => setDob(evt.target.value)} type="date" id="dob" className="form-control" placeholder="Date Of Birth" required />
                             </div>
 
-                            <button className="btn btn-lg btn-primary btn-block" onClick={() => saveUserData()} type="submit">Sign in</button>
+                            <button className="btn btn-lg btn-primary btn-block" onClick={() => saveUserData()} type="submit">Register</button>
                             <p>Already Have a Account? <Link to="/login">LogIn</Link></p>
                         </div>
                     </div>

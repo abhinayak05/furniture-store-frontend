@@ -63,11 +63,10 @@ function Cart() {
                     <div class="container">
                         <div class="row">
                             {
-
                                 cartProducts.length > 0 ? (
                                     cartProducts.map((item) =>
 
-                                        <div key={item.id} class="col-4">
+                                        <div key={item.id} class="col-md-4">
                                             <div class="card mb-4 box-shadow">
                                                 <Link style={{ textDecoration: 'none' }} to='/productdetails' state={item.id}>
                                                     <img className="card-img-top" height="210" src={"http://localhost:3000/assets/" + item.image_url} alt="Card image cap" />

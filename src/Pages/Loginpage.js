@@ -46,7 +46,7 @@ function Loginpage() {
                             <input value={password} onChange={(evt)=>setPassword(evt.target.value)} type="password"className="form-control" placeholder="Password" required />
                         </div>
 
-                        <button className="btn btn-lg btn-primary btn-block" onClick={()=>submitLogin()} type="submit">Sign in</button>
+                        <button className="btn btn-lg btn-primary btn-block" onClick={()=>submitLogin()} type="submit">Login</button>
                         <p>Create New Account? <Link to="/register">Register</Link></p>
                     </div>
                 </div>

@@ -23,9 +23,9 @@ export default placeOrderSlice.reducer
 
 //Thunks
 
-export const placeOrderProduct=(payload)=>{
+export const placeOrderProduct=(payload)=>{debugger
     return async function placeOrderProduct(dispatch,getState){
-      let accessToken = JSON.parse(localStorage.getItem('accessToken')).response;
+      let accessToken = JSON.parse(localStorage.getItem('accessToken')).response;debugger
       const ajaxProps = {
         method: 'post',
         data: payload,
@@ -34,10 +34,10 @@ export const placeOrderProduct=(payload)=>{
           Authorization: `${accessToken}`
         }
       }
-        const {data}=await axios(ajaxProps);
+        const {data}=await axios(ajaxProps);debugger
         if(data.status===200){
-           dispatch( setOrdersProducts(data.response))
-           window.location.href='/orderconfirmed'
+           dispatch(setOrdersProducts(data.response));debugger
+           window.location.href='/orderconfirmed';debugger
         }
     }
 } 
