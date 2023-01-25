@@ -5,6 +5,7 @@ import cartReducer from './Slices/CartSlice'
 import placeOrderReducer from './Slices/PlaceorderSlice'
 import ordersReducer from './Slices/OrderSlice'
 import requestReducer from './Slices/RequestSlice'
+import counterReducer from './Slices/counterSlice'
 
 export default configureStore({
   reducer: {
@@ -13,6 +14,7 @@ export default configureStore({
     cart:cartReducer,
     placeorder:placeOrderReducer,
     order:ordersReducer,
-    request:requestReducer
+    request:requestReducer,
+    counter:counterReducer,
   },
 })

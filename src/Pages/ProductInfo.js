@@ -15,7 +15,7 @@ export function ProductInfo() {
     var userId = items.user_id;
     
 
-    const [quantity, setQty] = useState('1')
+    // const [quantity, setQty] = useState('1')
 
     const location = useLocation()
     var id = location.state
@@ -25,7 +25,7 @@ export function ProductInfo() {
     }
     const products = useSelector((state) => state.product.products)
     console.log(products)
-
+    const [counter, setCounter] = useState(1);
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -38,13 +38,19 @@ export function ProductInfo() {
             user_id: userId,
             productId: item.id,
             product_name: item.product_name,
-            quantity: quantity,
+            quantity: counter,
             price: item.product_price
         }
         console.log(payloadCart)
         dispatch(addProductToCart(payloadCart))
     }
-
+    
+    const incrementBtn=()=>{
+        setCounter(counter+1);
+    }
+    const decrementBtn=()=>{
+        setCounter(counter-1)
+    }
 
     return (
         <div>
@@ -63,9 +69,23 @@ export function ProductInfo() {
                                     <h3>{products[0].product_name}</h3>
                                     <p class="card-text mt-2">{products[0].product_description}</p>
                                     <div class=" mt-2">
-                                        <div className='productQty d-flex align-items-center'>
+                                    {/* <div className='productQty d-flex align-items-center'>
                                             <h6 className='mr-2'>Quantity:</h6><input value={quantity} onChange={(evt) => setQty(evt.target.value)} />
-                                        </div>
+                                        </div> */}
+                                        <div class="d-flex align-items-center">
+                                                            <button
+                                                                aria-label="Increment value"
+                                                                style={{ height: "fit-content" }}
+                                                            onClick={() => incrementBtn()}
+                                                            >+</button>
+                                                            <p class="mt-3 ml-1 mr-1" value={counter} onChange={(evt)=>setCounter(evt.target.value)}>{counter}</p>
+                                                            <button
+                                                                style={{ height: "fit-content" }}
+                                                                aria-label="Decrement value"
+                                                            onClick={() =>decrementBtn()}
+                                                            >-</button>
+
+                                                        </div>
                                         <div className='d-flex align-items-center'>
                                             <h6 class="color-primary">Price:</h6>
                                             <h6>₹{products[0].product_price}</h6>
