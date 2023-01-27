@@ -14,24 +14,31 @@ export function ProductInfo() {
     const items = JSON.parse(accessToken)
     var userId = items.user_id;
     
-
+    const products = useSelector((state) => state.product.products)
+    console.log(products);debugger
     // const [quantity, setQty] = useState('1')
 
     const location = useLocation()
-    var id = location.state
+    var id = location.state;
 
+    // if(id){
+    //     localStorage.setItem('productid',id)
+    // }else{
+    //     id=localStorage.getItem('productid')
+    // }
+
+   
+   
+    const [counter, setCounter] = useState(1);
+    const dispatch = useDispatch()
     let payload = {
         id: id
     }
-    const products = useSelector((state) => state.product.products)
-    console.log(products)
-    const [counter, setCounter] = useState(1);
-    const dispatch = useDispatch()
-
+    console.log(payload)
     useEffect(() => {
-        dispatch(fetchProductById(payload))
+        // dispatch(fetchProductById(payload));debugger
     }, [])
-
+   
     const addToCart = (item) => {
         console.log(item)
         let payloadCart = {
@@ -42,7 +49,7 @@ export function ProductInfo() {
             price: item.product_price
         }
         console.log(payloadCart)
-        dispatch(addProductToCart(payloadCart))
+        dispatch(addProductToCart(payloadCart));
     }
     
     const incrementBtn=()=>{
@@ -61,13 +68,13 @@ export function ProductInfo() {
                         <div class="d-flex justify-content-around">
                             <div class="col-4">
                                 <div class="card mb-4 box-shadow">
-                                    <img class="card-img-top" width="100%" src={"http://localhost:3000/assets/" + products[0].image_url} alt="Card image cap" />
+                                    <img class="card-img-top" width="100%" src={"http://localhost:3000/assets/" + id.image_url} alt="Card image cap" />
                                 </div>
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
-                                    <h3>{products[0].product_name}</h3>
-                                    <p class="card-text mt-2">{products[0].product_description}</p>
+                                    <h3>{id.product_name}</h3>
+                                    <p class="card-text mt-2">{id.product_description}</p>
                                     <div class=" mt-2">
                                     {/* <div className='productQty d-flex align-items-center'>
                                             <h6 className='mr-2'>Quantity:</h6><input value={quantity} onChange={(evt) => setQty(evt.target.value)} />
@@ -88,12 +95,12 @@ export function ProductInfo() {
                                                         </div>
                                         <div className='d-flex align-items-center'>
                                             <h6 class="color-primary">Price:</h6>
-                                            <h6>₹{products[0].product_price}</h6>
+                                            <h6>₹{id.product_price}</h6>
                                         </div>
                                     </div>
                                     <div class="btn-group mt-5">
                                         <button type="button" class="btn btn-lg btn-outline-success" data-toggle="modal"
-                                            data-target="#productModal" onClick={() => addToCart(products[0])}>Cart</button>
+                                            data-target="#productModal" onClick={() => addToCart(id)}>Cart</button>
                                         <button type="button" class="btn btn-lg btn-danger">Buy</button>
                                     </div>
                                 </div>

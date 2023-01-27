@@ -54,7 +54,7 @@ export function Homepage() {
 
                                 <div className="card mb-4 box-shadow">
                                     <div className="card-body">
-                                        <Link style={{ textDecoration: 'none' }} to='/productdetails' state={item.id}>
+                                        <Link style={{ textDecoration: 'none' }} to='/productdetails' state={item}>
                                             <img className="card-img-top" height="210" src={"http://localhost:3000/assets/" + item.image_url} alt="Card image cap" />
 
                                             <h5>{item.product_name}</h5>

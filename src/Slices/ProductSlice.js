@@ -44,9 +44,9 @@ export const fetchProducts = () => {
   }
 }
 
-export const fetchProductById = (payload) => {
-  return async function fetchProductById(dispatch, getState) {
-    let accessToken = JSON.parse(localStorage.getItem('accessToken')).response;
+export const fetchProductById = (payload) => {debugger
+  return async function fetchProductById(dispatch, getState) {debugger
+    let accessToken = JSON.parse(localStorage.getItem('accessToken')).response;debugger
       const ajaxProps = {
         method: 'post',
         data: payload,
@@ -55,10 +55,10 @@ export const fetchProductById = (payload) => {
           Authorization: `${accessToken}`
         }
       }
-        const {data}=await axios(ajaxProps);
+        const {data}=await axios(ajaxProps);debugger
     console.log(data.response)
     if (data.status === 200) {
-      dispatch(getProductById(data.response))
+      dispatch(getProductById(data.response));debugger
     }
   }
 }
