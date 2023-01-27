@@ -21,13 +21,6 @@ export function ProductInfo() {
     const location = useLocation()
     var id = location.state;
 
-    // if(id){
-    //     localStorage.setItem('productid',id)
-    // }else{
-    //     id=localStorage.getItem('productid')
-    // }
-
-   
    
     const [counter, setCounter] = useState(1);
     const dispatch = useDispatch()
